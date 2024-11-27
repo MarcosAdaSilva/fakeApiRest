@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        package-to-scan: com.marcosDev.fake_api_us.infrastructure.entities
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  cloud:
+    loadbalancer:
+      ribbon:
+        enable: true
+topic:
+  fake-api:
+    consumer:
+      nome: fake-api-consumer-products-v3
+      group-id: marcosDev
+    producer:
+      nome: fake-api-producer-products-v3
+
+fake-api:
+  url: https://fakestoreapi.com
+
+server:
+  port: 8181
+
+send:
+  mail:
+    to:
+    from:
