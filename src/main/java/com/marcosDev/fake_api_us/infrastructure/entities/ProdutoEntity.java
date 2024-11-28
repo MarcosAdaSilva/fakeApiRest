@@ -1,6 +1,5 @@
 package com.marcosDev.fake_api_us.infrastructure.entities;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
