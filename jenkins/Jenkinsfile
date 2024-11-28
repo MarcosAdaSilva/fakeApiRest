@@ -1,14 +1,13 @@
-#!/usr/bin/env groovy
 pipeline {
-      agent none
-      stages {
-          stage('Build') {
-              agent {
-                  any { image 'maven' }
-              }
-              steps {
-                 bat "mvn package -Dmaven.test.skip=true"
-              }
-         }
-      }
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh '''
+                #!/bin/bash
+                mvn package -Dmaven.test.skip=true
+                '''
+            }
+        }
+    }
 }
