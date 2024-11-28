@@ -4,7 +4,7 @@ pipeline {
       stages {
           stage('Build') {
               agent {
-                  label { image 'maven' }
+                  none { image 'maven' }
               }
               steps {
                  sh "mvn package -Dmaven.test.skip=true"
