@@ -4,7 +4,7 @@ pipeline {
       stages {
           stage('Build') {
               agent {
-                  docker { image 'maven' }
+                  label { image 'maven' }
               }
               steps {
                  sh "mvn package -Dmaven.test.skip=true"
