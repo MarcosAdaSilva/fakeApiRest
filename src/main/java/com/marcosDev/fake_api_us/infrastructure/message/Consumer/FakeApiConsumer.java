@@ -1,7 +1,7 @@
 package com.marcosDev.fake_api_us.infrastructure.message.Consumer;
 
 import com.marcosDev.fake_api_us.apiv1.dto.ProductsDTO;
-import com.marcosDev.fake_api_us.business.service.ProdutoService;
+import com.marcosDev.fake_api_us.business.services.ProdutoService;
 import com.marcosDev.fake_api_us.exceptions.BusinessException;
 import lombok.AllArgsConstructor;
 import org.springframework.kafka.annotation.KafkaListener;

@@ -1,8 +1,8 @@
 package com.marcosDev.fake_api_us.apiv1.controller;
 
 import com.marcosDev.fake_api_us.apiv1.dto.ProductsDTO;
-import com.marcosDev.fake_api_us.business.service.FakeApiService;
-import com.marcosDev.fake_api_us.business.service.ProdutoService;
+import com.marcosDev.fake_api_us.business.services.FakeApiService;
+import com.marcosDev.fake_api_us.business.services.ProdutoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

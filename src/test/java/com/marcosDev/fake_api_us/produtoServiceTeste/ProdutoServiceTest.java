@@ -1,8 +1,8 @@
 package com.marcosDev.fake_api_us.produtoServiceTeste;
 
 import com.marcosDev.fake_api_us.apiv1.dto.ProductsDTO;
-import com.marcosDev.fake_api_us.business.service.ProdutoService;
-import com.marcosDev.fake_api_us.business.service.converter.ProdutoConverter;
+import com.marcosDev.fake_api_us.business.services.ProdutoService;
+import com.marcosDev.fake_api_us.business.converter.ProdutoConverter;
 import com.marcosDev.fake_api_us.exceptions.BusinessException;
 import com.marcosDev.fake_api_us.exceptions.ConflictException;
 import com.marcosDev.fake_api_us.exceptions.UnprocessableEntityException;

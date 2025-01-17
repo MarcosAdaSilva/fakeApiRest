@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                docker 'echo Building on Windows'
+                bat 'echo Building on Windows'
             }
         }
     }

@@ -1,4 +1,4 @@
-package com.marcosDev.fake_api_us.business.service.converter;
+package com.marcosDev.fake_api_us.business.converter;
 
 import com.marcosDev.fake_api_us.apiv1.dto.ProductsDTO;
 import com.marcosDev.fake_api_us.infrastructure.entities.ProdutoEntity;
